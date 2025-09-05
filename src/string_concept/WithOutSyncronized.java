@@ -31,7 +31,7 @@ class MoviesBook extends  Thread{
     public static void main(String[] args) {
         b= new WithOutSyncronized();
         MoviesBook jafer= new MoviesBook();
-        jafer.seats=8;
+        jafer.seats=6;
         jafer.start();
 
         MoviesBook amit =new MoviesBook();
