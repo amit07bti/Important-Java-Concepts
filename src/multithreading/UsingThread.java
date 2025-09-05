@@ -10,10 +10,21 @@ public class UsingThread extends Thread{
 
 
     public static void main(String[] args) {
-        UsingThread thread= new UsingThread();
+        UsingThread t1= new UsingThread();
+        t1.start();
 
-        thread.start();    // is going on dead state
-        thread.start();
+                                            // is going on dead state
+        UsingThread t2= new UsingThread();
+        t2.start();
+        UsingThread t3= new UsingThread();
+        t3.start();
+
+        UsingThread t4= new UsingThread();
+        t4.start();
+
+        UsingThread t5= new UsingThread();
+        t5.start();
+
     }
 
 }
