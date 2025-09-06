@@ -14,7 +14,7 @@ public class WithOutSyncronized {
             System.out.println("left sheet" + total_seats);
         } else {
             System.out.println("OOPs  sorry sheet can not booked.......!");
-            System.out.println("sheet left  " + total_seats);
+            System.out.println("sheet left:  " + total_seats);
         }
     }
 
