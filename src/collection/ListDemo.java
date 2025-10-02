@@ -1,30 +1,35 @@
 package collection;
 
+
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
+import java.util.Stack;
 
 public class ListDemo {
 
     public static void main(String[] args) {
 
-        List l= new ArrayList();
-
-        l.add(10);
-        l.add(20);
-        l.add(30);
-        l.add(40);
-        System.out.println(l);
-        System.out.println(l.indexOf(40));
-
-        Iterator itr= l.iterator();
-        while (itr.hasNext()){
-            System.out.println(itr.next());
-            System.out.println("stop");
-        }
-        System.out.println("exit");
-
+        List l = new ArrayList();
         l.add(23);
-        System.out.println(l    );
+        l.add(34);
+        l.add(34.5);
+        l.add("Amit");
+       Iterator list= l.iterator();
+       while (list.hasNext()){
+           System.out.println(list.next());
+       }
+        Stack stack= new Stack();
+       stack.add(100);
+       stack.add(200);
+       stack.add(300);
+        Iterator listp= l.iterator();
+        while (listp.hasNext()){
+            System.out.println(listp.next());
+        }
+        System.out.println(stack);
+
+
+
     }
 }
